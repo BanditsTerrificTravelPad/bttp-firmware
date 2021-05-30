@@ -1,0 +1,6 @@
+#define NUM_STEPS 4
+
+int pins[NUM_STEPS]  = {A7, A8, A9, A6};
+int buttons[NUM_STEPS] = {KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_UP_ARROW, KEY_RIGHT_ARROW};
+
+#define BAUD_RATE 9600
