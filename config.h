@@ -22,7 +22,7 @@ const uint8_t KEYBOARD_BUTTONS[NUM_STEPS] = {KEY_LEFT_ARROW, KEY_DOWN_ARROW,
 #endif
 
 // These can be modified at runtime but these are the initial values:
-uint32_t THRESHOLDS[NUM_STEPS] = {500, 500, 400, 500};
+uint32_t THRESHOLDS[NUM_STEPS] = {500, 500, 500, 500};
 
 // LED setup
 #define LEDS // comment out to disable
@@ -32,8 +32,8 @@ uint32_t THRESHOLDS[NUM_STEPS] = {500, 500, 400, 500};
 
 // the order of the above-defined pins that the LEDs correspond to
 const int PAD_LED_ORDER[NUM_STEPS] = {3, 1, 0, 2};
-#define LED_IDLE_BRIGHTNESS 0.5
-#define LED_ACTIVE_BRIGHTNESS 0.5
+#define LED_IDLE_BRIGHTNESS 0.4
+#define LED_ACTIVE_BRIGHTNESS 0.1
 #define LED_ACTIVE_COLOR 0x0099FF
 
 #define LED_TYPE WS2811
