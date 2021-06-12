@@ -1,6 +1,11 @@
+#ifndef BTTP_CONFIG
+#define BTTP_CONFIG
+
 #define NUM_STEPS 4
+const uint8_t PINS[NUM_STEPS] = {A6, A7, A8, A9};
+const uint8_t JOYSTICK_BUTTONS[NUM_STEPS] = {1, 2, 3, 4};
+uint32_t thresholds[NUM_STEPS] = {300, 300, 300, 300};
 
-int pins[NUM_STEPS]  = {A7, A8, A9, A6};
-int buttons[NUM_STEPS] = {KEY_LEFT_ARROW, KEY_DOWN_ARROW, KEY_UP_ARROW, KEY_RIGHT_ARROW};
+#define BAUD_RATE 115200
 
-#define BAUD_RATE 9600
+#endif
